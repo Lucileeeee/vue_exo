@@ -1,10 +1,11 @@
 <template>
+  <h1>Event Binding : </h1>
   <div class="bg-info-subtle">
     <button @click="diminuer()">-</button>
-    <button @click="diminuer33()">Maxi - </button>
-   <p>Le nombre : {{ nb }}</p>
-  <button @click="augmenter()">+</button>
-  <button @click="augmenter33()">Maxi + </button>
+    <button @click="diminuerMaxi(33)">Maxi - </button>
+    <p>Le nombre : {{ nb }}</p>
+    <button @click="augmenter()">+</button>
+    <button @click="augmenterMaxi(33)">Maxi + </button>
 </div>
 </template>
 
@@ -21,12 +22,12 @@ function diminuer(){
   nb.value --;
 }
 
-function augmenter33(){
-  nb.value += 33 ;
+function augmenterMaxi(n){
+  nb.value += n ;
 }
 
-function diminuer33(){
-  nb.value -= 33;
+function diminuerMaxi(n){
+  nb.value -= n;
 }
 
 </script>

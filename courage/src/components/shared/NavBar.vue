@@ -15,14 +15,22 @@
     <li><a class="dropdown-item" href="#">Liste exercices</a></li>
     <li>
         <router-link to="/ComposantTest" class="dropdown-item">
-            
-                ComposantTest
-            
+            ComposantTest
         </router-link>
     </li>
     <li>
         <router-link to='/EventBinding' class="dropdown-item">
             EventBinding
+        </router-link>
+    </li>
+    <li>TpEventBinding
+        <router-link to='/ClientX' class="dropdown-item">
+            ClientX
+        </router-link>
+    </li>
+    <li>
+        <router-link to='/TpEventBinding' class="dropdown-item">
+            TpEventBinding
         </router-link>
     </li>
     <li><router-link to="/Lesson_inline-templating"><a class="dropdown-item" href="#">inline Templating(v-html)</a></router-link></li>

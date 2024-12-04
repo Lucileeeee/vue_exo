@@ -44,6 +44,16 @@ const router = createRouter({
             name: 'EventBinding',
             component: () => import('../views/exo/EventBinding.vue')
         },
+        {
+            path: '/ClientX',
+            name: 'ClientX',
+            component: () => import('../views/exo/ClientX.vue')
+        },
+        {
+            path: '/TpEventBinding',
+            name: 'TpEventBinding',
+            component: () => import('../views/exo/TpEventBinding.vue')
+        },
     ]
 });
 

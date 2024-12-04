@@ -1,4 +1,5 @@
 <template>
+   <h1>Inline Templating : </h1>
   <div>
     <h5>Inline Templating Mode : Composition</h5>
     <!-- Avec String interpolation {{}} le code HTML n'est pas interprété par le navigateur -->
