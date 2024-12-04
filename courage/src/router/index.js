@@ -24,6 +24,21 @@ const router = createRouter({
             name: 'ComposantTest',
             component: () => import('../views/exo/ComposantTest.vue')
         },
+        {
+            path: '/Function',
+            name: 'Function',
+            component: () => import('../views/exo/Function.vue')
+        },
+        {
+            path: '/Inline',
+            name: 'Inline',
+            component: () => import('../views/exo/Inline.vue')
+        },
+        {
+            path: '/Tp1',
+            name: 'Tp',
+            component: () => import('../views/exo/Tp1.vue')
+        },
     ]
 });
 
