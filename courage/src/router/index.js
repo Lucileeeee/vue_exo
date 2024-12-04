@@ -36,8 +36,13 @@ const router = createRouter({
         },
         {
             path: '/Tp1',
-            name: 'Tp',
+            name: 'Tp1',
             component: () => import('../views/exo/Tp1.vue')
+        },
+        {
+            path: '/EventBinding',
+            name: 'EventBinding',
+            component: () => import('../views/exo/EventBinding.vue')
         },
     ]
 });
