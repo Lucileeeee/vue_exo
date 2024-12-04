@@ -8,7 +8,7 @@
     <p>Âge : {{ age }}</p>
     <p>Nombre Fétiche : {{ getRandomInt() }}</p>
     <p>Age + 10 : {{ agePlus10(age) }}</p>
-    <input v-model="text" placeholder="J'adore le Jambon">
+    <input v-bind:placeholder=nom>
   </div>
 </template>
 
