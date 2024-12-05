@@ -69,6 +69,21 @@ const router = createRouter({
             name: 'Tp2',
             component: () => import('../views/exo/Tp2.vue')
         },
+        {
+            path: '/Style',
+            name: 'Style',
+            component: () => import('../views/exo/Style.vue')
+        },
+        {
+            path: '/StyleClass',
+            name: 'StyleClass',
+            component: () => import('../views/exo/StyleClass.vue')
+        },
+        {
+            path: '/Tp3',
+            name: 'Tp3',
+            component: () => import('../views/exo/Tp3.vue')
+        },
     ]
 });
 

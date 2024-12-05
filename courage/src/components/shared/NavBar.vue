@@ -44,15 +44,36 @@
         ComputedBug
       </router-link>
     </li>
-    <router-link class="dropdown-item" to="/Function">
-      Fonction
-    </router-link>
-    <router-link class="dropdown-item" to='/Watchers'>
-      Watchers
-    </router-link>
-    <router-link class="dropdown-item" to='/Tp2'>
-      Tp2
-    </router-link>
+    <li>
+      <router-link class="dropdown-item" to="/Function">
+        Fonction
+      </router-link>
+    </li>
+    <li>
+      <router-link class="dropdown-item" to='/Watchers'>
+        Watchers
+      </router-link>
+    </li>
+    <li>
+      <router-link class="dropdown-item" to='/Tp2'>
+        Tp2
+      </router-link>
+    </li>'/StyleClass'
+    <li>
+      <router-link class="dropdown-item" to='/Style'>
+        Style
+      </router-link>
+    </li>
+    <li>
+      <router-link class="dropdown-item" to='/StyleClass'>
+        Style Class
+      </router-link>
+    </li>
+    <li>
+      <router-link class="dropdown-item" to='/Tp3'>
+        Tp3
+      </router-link>
+    </li>
     </ul>
 </li>
 </nav>

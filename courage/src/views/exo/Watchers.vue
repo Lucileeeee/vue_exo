@@ -18,7 +18,7 @@ const leNombre = ref(0);
 
 // Utilisez `watch` pour surveiller les changements de `leNombre`
 // on donne une variable temporaire 'newValue' pour modifier leNombre
-// à l'intérieur de la fonction watch
+// à l'intérieur de la fonction wath
 watch(leNombre, (newValue) => {
   if (newValue === 7) {
     leNombre.value = 0;
