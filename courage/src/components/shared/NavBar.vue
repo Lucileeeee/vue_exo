@@ -1,7 +1,7 @@
 <template>
  <!-- As a link -->
 <nav class="navbar navbar-light bg-light">
-  <router-link class="nav-link active" aria-current="page" to="/home">Maison</router-link>
+  <router-link class="nav-link active" aria-current="page" to="/home">Accueil</router-link>
   <router-link class="nav-link active" aria-current="page" to="/lessons-lessonsTextInter">Lessons</router-link>
   <router-link class="nav-link active" aria-current="page" to="/Tp1">Tp</router-link>
   <li class="nav-item dropdown">
