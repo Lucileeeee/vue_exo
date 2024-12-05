@@ -47,10 +47,12 @@
     <router-link class="dropdown-item" to="/Function">
       Fonction
     </router-link>
-    <li><router-link to="/Lesson_inline-templating"><a class="dropdown-item" href="#">inline Templating(v-html)</a></router-link></li>
-    <li><router-link to="/AttributeBinding"><a class="dropdown-item" href="#">Attribute Binding (v-bind)</a></router-link></li>
-    <li><a class="dropdown-item" href="#">Event Binding (v-on)</a></li>
-    
+    <router-link class="dropdown-item" to='/Watchers'>
+      Watchers
+    </router-link>
+    <router-link class="dropdown-item" to='/Tp2'>
+      Tp2
+    </router-link>
     </ul>
 </li>
 </nav>

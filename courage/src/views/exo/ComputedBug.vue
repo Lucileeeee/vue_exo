@@ -35,7 +35,7 @@ function afficherString(){
 </style> -->
 
 //! partie correction de jeff:
-<template>
+<!-- <template>
   <div class="container">
     <h5>Computed Bug Mode  : Composition</h5>
     <div class="mb-3">
@@ -74,7 +74,7 @@ const augmenter = (nb) => {
 const reduire = (nb) => {
   leNombre.value -= nb;
 }
-</script>
+</script> -->
 
 //! Résolution du bug grace à la fonction computed():
 

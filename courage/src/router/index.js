@@ -59,6 +59,16 @@ const router = createRouter({
             name: 'ComputedBug',
             component: () => import('../views/exo/ComputedBug.vue')
         },
+        {
+            path: '/Watchers',
+            name: 'Watchers',
+            component: () => import('../views/exo/Watchers.vue')
+        },
+        {
+            path: '/Tp2',
+            name: 'Tp2',
+            component: () => import('../views/exo/Tp2.vue')
+        },
     ]
 });
 
