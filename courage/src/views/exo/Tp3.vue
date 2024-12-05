@@ -30,19 +30,41 @@ function capterInput2(event){
   console.log( couleurDeuxiemeP.value);
 }
 
-/* const selectCard1 = ref(false);
-const selectCard2 = ref(false);
+/* Partie Jeff des conditions:
 
-function selectionCard(uneCard) {
-  if (uneCard === 1) {
-    selectCard1.value = !selectCard1.value;
-  }
-  if (uneCard === 2) {
-    selectCard2.value = !selectCard2.value;
-  }
-} */
+// Propriété calculée
+const classDynamique = computed(() => ({
+  maClasseHello: nomClasse.value === 'hello',
+  //! le return : maClasseHello:
+  //! la condition : nomClasse.value === 'hello'
+  maClasseWorld: nomClasse.value === 'world',
+  maClasseHidden: !visible.value,
+  maClasseVisible: visible.value,
+}));
 
-// :class="{selectCard1 ? 'maClassHello' : 'word'}"
+
+//Equivalent en if classique:
+const classDynamique = computed(() => {
+  const classes = {};
+  
+  if (nomClasse.value === 'hello') {
+    classes.maClasseHello = true;
+  }
+  
+  if (nomClasse.value === 'world') {
+    classes.maClasseWorld = true;
+  }
+  
+  if (!visible.value) {
+    classes.maClasseHidden = true;
+  } else {
+    classes.maClasseVisible = true;
+  }
+  
+  return classes;
+});
+
+*/
 </script>
 
 
