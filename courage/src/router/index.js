@@ -54,6 +54,11 @@ const router = createRouter({
             name: 'TpEventBinding',
             component: () => import('../views/exo/TpEventBinding.vue')
         },
+        {
+            path: '/ComputedBug',
+            name: 'ComputedBug',
+            component: () => import('../views/exo/ComputedBug.vue')
+        },
     ]
 });
 
