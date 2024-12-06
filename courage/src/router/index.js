@@ -15,9 +15,49 @@ const router = createRouter({
             component: () => import('../views/NotFoundView.vue')
         },
         {
+            path: '/LessonAttributeBindingView',
+            name: 'LessonAttributeBindingView',
+            component: () => import('../views/lessons/LessonAttributeBindingView.vue')
+        },
+        {
+            path: '/LessonComputedProperties',
+            name: 'LessonComputedProperties',
+            component: () => import('../views/lessons/LessonComputedProperties.vue')
+        },
+        {
+            path: '/LessonDynamicStyling',
+            name: 'LessonDynamicStyling',
+            component: () => import('../views/lessons/LessonDynamicStyling.vue')
+        },
+        {
+            path: '/LessonEventBindingView',
+            name: 'LessonEventBindingView',
+            component: () => import('../views/lessons/LessonEventBindingView.vue')
+        },
+        {
+            path: '/LessonInlineTemplatingView',
+            name: 'LessonInlineTemplatingView',
+            component: () => import('../views/lessons/LessonInlineTemplatingView.vue')
+        },
+        {
+            path: '/LessonMethods',
+            name: 'LessonMethods',
+            component: () => import('../views/lessons/LessonMethods.vue')
+        },
+        {
+            path: '/LessonTextInterpolation',
+            name: 'LessonTextInterpolation',
+            component: () => import('../views/lessons/LessonTextInterpolation.vue')
+        },
+        {
             path: '/lessonsTextInter',
             name: 'lessonsTextInter',
-            component: () => import('../views/lessons/LessonTextInterpolation.vue')
+            component: () => import('../views/lessons/LessonTwoWayBinding.vue')
+        },
+        {
+            path: '/LessonWatchers',
+            name: 'LessonWatchers',
+            component: () => import('../views/lessons/LessonWatchers.vue')
         },
         {
             path: '/ComposantTest',
@@ -37,7 +77,7 @@ const router = createRouter({
         {
             path: '/Tp1',
             name: 'Tp1',
-            component: () => import('../views/exo/Tp1.vue')
+            component: () => import('../views/tp/Tp1.vue')
         },
         {
             path: '/EventBinding',
@@ -67,7 +107,7 @@ const router = createRouter({
         {
             path: '/Tp2',
             name: 'Tp2',
-            component: () => import('../views/exo/Tp2.vue')
+            component: () => import('../views/tp/Tp2.vue')
         },
         {
             path: '/Style',
@@ -82,7 +122,7 @@ const router = createRouter({
         {
             path: '/Tp3',
             name: 'Tp3',
-            component: () => import('../views/exo/Tp3.vue')
+            component: () => import('../views/tp/Tp3.vue')
         },
     ]
 });

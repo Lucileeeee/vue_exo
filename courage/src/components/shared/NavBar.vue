@@ -1,9 +1,83 @@
 <template>
  <!-- As a link -->
 <nav class="navbar navbar-light bg-light">
-  <router-link class="nav-link active" aria-current="page" to="/home">Accueil</router-link>
-  <router-link class="nav-link active" aria-current="page" to="/lessons-lessonsTextInter">Lessons</router-link>
-  <router-link class="nav-link active" aria-current="page" to="/Tp1">Tp</router-link>
+  <router-link class="nav-link active" aria-current="page" to="/home">
+    Accueil
+  </router-link>
+  <!-- Début de la liste des Lessons : -->
+  <li class="nav-item dropdown">
+    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Lessons
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonAttributeBindingView">
+          Attribute Binding View
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonComputedProperties">
+          Computed Properties
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonDynamicStyling">
+          Dynamic Styling
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonEventBindingView">
+          Event Binding View
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonInlineTemplatingView">
+          Inline TemplatingView
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonMethods">
+          Methods
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonTextInterpolation">
+          Text Interpolation
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonWatchers">
+          Watchers
+        </router-link>
+      </li>
+    </ul>
+  </li>
+<!-- Fin de la liste des Lessons : -->
+<!-- Début de la liste des TPs: : -->
+  <li class="nav-item dropdown">
+    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Tp
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/Tp1">
+          Tp1
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" to='/Tp2'>
+          Tp2
+        </router-link>
+      </li>
+      <li>
+        <router-link class="dropdown-item" to='/Tp3'>
+          Tp3
+        </router-link>
+      </li>
+    </ul>
+  </li>
+<!-- Fin de la liste des TPs: : -->
+<!-- Début de la liste des Exos: : -->
   <li class="nav-item dropdown">
     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Exo
@@ -55,11 +129,6 @@
       </router-link>
     </li>
     <li>
-      <router-link class="dropdown-item" to='/Tp2'>
-        Tp2
-      </router-link>
-    </li>'/StyleClass'
-    <li>
       <router-link class="dropdown-item" to='/Style'>
         Style
       </router-link>
@@ -69,13 +138,9 @@
         Style Class
       </router-link>
     </li>
-    <li>
-      <router-link class="dropdown-item" to='/Tp3'>
-        Tp3
-      </router-link>
-    </li>
     </ul>
 </li>
+<!-- Fin de la liste des Exos -->
 </nav>
 </template>
 
