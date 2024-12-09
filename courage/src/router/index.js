@@ -60,6 +60,11 @@ const router = createRouter({
             component: () => import('../views/lessons/LessonWatchers.vue')
         },
         {
+            path: '/LessonListRendering',
+            name: 'LessonListRendering',
+            component: () => import('../views/lessons/LessonListRendering.vue')
+        },
+        {
             path: '/ComposantTest',
             name: 'ComposantTest',
             component: () => import('../views/exo/ComposantTest.vue')
@@ -120,9 +125,19 @@ const router = createRouter({
             component: () => import('../views/exo/StyleClass.vue')
         },
         {
+            path: '/V-For',
+            name: 'V-For',
+            component: () => import('../views/exo/V-For.vue')
+        },
+        {
             path: '/Tp3',
             name: 'Tp3',
             component: () => import('../views/tp/Tp3.vue')
+        },
+        {
+            path: '/Tp4_ConditionalRender',
+            name: 'Tp4_ConditionalRender',
+            component: () => import('../views/tp/Tp4_ConditionalRender.vue')
         },
     ]
 });

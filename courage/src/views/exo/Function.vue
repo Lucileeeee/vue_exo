@@ -1,5 +1,5 @@
 <template>
-   <h1>Function : </h1>
+  <h1>Function : </h1>
   <div class="bg-info-subtle"></div>
   <p> {{ renvoyerLivre() }} </p>
 

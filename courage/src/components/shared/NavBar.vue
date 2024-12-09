@@ -50,6 +50,11 @@
           Watchers
         </router-link>
       </li>
+      <li>
+        <router-link class="dropdown-item" aria-current="page" to="/LessonListRendering">
+          LessonListRendering
+        </router-link>
+      </li>
     </ul>
   </li>
 <!-- Fin de la liste des Lessons : -->
@@ -74,6 +79,11 @@
           Tp3
         </router-link>
       </li>
+      <li>
+        <router-link class="dropdown-item" to='/Tp4_ConditionalRender'>
+          Tp4_ConditionalRender
+        </router-link>
+      </li>
     </ul>
   </li>
 <!-- Fin de la liste des TPs: : -->
@@ -86,6 +96,11 @@
     <li>
         <router-link to="/ComposantTest" class="dropdown-item">
             ComposantTest
+        </router-link>
+    </li>
+    <li>
+        <router-link to="/V-for" class="dropdown-item">
+            V-for
         </router-link>
     </li>
     <li>

@@ -46,21 +46,17 @@ const classDynamique = computed(() => ({
 //Equivalent en if classique:
 const classDynamique = computed(() => {
   const classes = {};
-  
   if (nomClasse.value === 'hello') {
     classes.maClasseHello = true;
   }
-  
   if (nomClasse.value === 'world') {
     classes.maClasseWorld = true;
   }
-  
   if (!visible.value) {
     classes.maClasseHidden = true;
   } else {
     classes.maClasseVisible = true;
   }
-  
   return classes;
 });
 
