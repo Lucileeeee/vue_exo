@@ -168,6 +168,11 @@
         Route Parent
       </router-link>
     </li>
+    <li>
+      <router-link class="dropdown-item" to='/Emit_parent'>
+        Emit
+      </router-link>
+    </li>
     </ul>
 </li>
 <!-- Fin de la liste des Exos -->

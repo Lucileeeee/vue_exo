@@ -131,6 +131,11 @@ const router = createRouter({
             props: true
         },
         {
+            path: '/Emit_parent',
+            name: 'Emit_parent',
+            component: () => import('../views/exo/Emit_parent.vue')
+        },
+        {
             path: '/Tp2',
             name: 'Tp2',
             component: () => import('../views/tp/Tp2.vue')
