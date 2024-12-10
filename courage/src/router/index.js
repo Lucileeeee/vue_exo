@@ -110,6 +110,27 @@ const router = createRouter({
             component: () => import('../views/exo/Watchers.vue')
         },
         {
+            path: '/Props_parent',
+            name: 'Props_parent',
+            component: () => import('../views/exo/Props_parent.vue')
+        },
+        {
+            path: '/FetchPokemon_parent',
+            name: 'FetchPokemon_parent',
+            component: () => import('../views/exo/FetchPokemon_parent.vue')
+        },
+        {
+            path: '/Route_parent',
+            name: 'Route_parent',
+            component: () => import('../views/exo/Route_parent.vue')
+        },
+        {
+            path: '/Route_enfant/:id/:name',
+            name: 'Route_enfant',
+            component: () => import('../views/exo/Route_enfant.vue'),
+            props: true
+        },
+        {
             path: '/Tp2',
             name: 'Tp2',
             component: () => import('../views/tp/Tp2.vue')

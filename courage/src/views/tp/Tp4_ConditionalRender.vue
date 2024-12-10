@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang='js'>
-import { computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
+
 import { ref } from 'vue';
 
 let uneCourse = ref('');

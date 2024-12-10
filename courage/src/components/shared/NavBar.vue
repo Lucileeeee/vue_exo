@@ -153,6 +153,21 @@
         Style Class
       </router-link>
     </li>
+    <li>
+      <router-link class="dropdown-item" to='/Props_parent'>
+        Props Parent
+      </router-link>
+    </li>
+    <li>
+      <router-link class="dropdown-item" to='/FetchPokemon_parent'>
+        Fetch Pokemon
+      </router-link>
+    </li>
+    <li>
+      <router-link class="dropdown-item" to='/Route_parent'>
+        Route Parent
+      </router-link>
+    </li>
     </ul>
 </li>
 <!-- Fin de la liste des Exos -->
