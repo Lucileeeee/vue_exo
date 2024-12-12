@@ -84,6 +84,11 @@
           Tp4_ConditionalRender
         </router-link>
       </li>
+      <li>
+        <router-link to='/Tp5_parent' class="dropdown-item">
+          Tp5 parent
+        </router-link>
+    </li>
     </ul>
   </li>
 <!-- Fin de la liste des TPs: : -->

@@ -1,22 +1,45 @@
 <template>
-  <div class="container my-1 p-3">
-      <ul class="list-group">
-          <h2 class="list-group-item">{{ name }} {{ premiumData ? 'Ami premium' : 'Ami nul' }}</h2>
-          <button @click="afficherPremium" class="btn btn-danger mb-1">Premium ?</button>
-          <button @click="afficherDetails" class="btn btn-outline-dark">{{ detailsVisibles ? 'Masquer' : 'Afficher'}}</button>
-          <ul v-if="detailsVisibles" class="list-group">
-              <li class="list-group-item">{{ phone }}</li>
-              <li class="list-group-item">{{ email }}</li>
-          </ul>
+  <div class="container my-1">
+    <ul class="list-group">
+      <h2 class="list-group-item">{{unAmiName}} {{premium ? '(Ami premium)':'(Ami nul)'}}</h2> 
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button @click="afficherDetails" type="button" class="m-1 btn btn-outline-secondary">👁 {{detailsVisibles? 'Masquer': 'Afficher'}} Détails</button>
+        <button @click="afficherPremium"  type="button" class=" m-1 btn btn-outline-success">⭐️ Premium</button>
+        <button @click="emit('deleteFriend',id)" type="button" class=" m-1 btn btn-outline-danger">🗑 Suppr.</button>
+      </div>
+      <ul v-if="detailsVisibles" class="list-group">
+        <li class="list-group-item">{{unAmiPhone}}</li>
+        <li class="list-group-item">{{unAmiMail}}</li>
       </ul>
-  </div>
+    </ul>
+  </div> 
 </template>
 
 <script setup lang='js'>
-import { computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
 import { ref, defineProps } from 'vue';
 
-const emit = defineEmits(['mon-event-premium']);
+/* const emit = defineEmits(['mon-event-premium']); */
+const emit = defineEmits({
+  'mon-event-premium': (id) => {
+    if (id) {
+      return true;
+    } else {
+      console.warn('C\'est la catastrophe !!!!!!');
+      console.error('ON A PAS DE ID Dans le event mon-event-premium');
+      return false;
+    }
+  },
+  'deleteFriend': (id) => {
+    if (id) {
+      return true;
+    } else {
+      console.warn('C\'est la catastrophe !!!!!!');
+      console.error('ON A PAS DE ID Dans le event deleteFriend');
+      return false;
+    }
+  }
+
+});
 
 const toto = defineProps({
   id: {
@@ -54,7 +77,6 @@ const afficherDetails = () => {
 const afficherPremium = () => {
   premiumData.value = !premiumData.value;
   emit('mon-event-premium', toto.id);
-
 };
 
 </script>

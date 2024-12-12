@@ -13,11 +13,15 @@
 </template>
 
 <script setup lang='js'>
-import { ref, computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
+import { ref } from 'vue'
 import Emit_enfant from './Emit_enfant.vue' 
 
-function reactionParent(){
-  console.log(`retour de l'émit`, toto.id);
+function reactionParent(leIdDansUnAmi){
+ // console.log(`retour de l'émit`, lesAmis[0].id);
+  const unAmiIdentified = lesAmis.value.find(unAmiATrouver => unAmiATrouver.id === leIdDansUnAmi);
+    console.log('amiIdentified : ', unAmiIdentified);
+    unAmiIdentified.premium = !unAmiIdentified.premium;
+    console.log('amiIdentified : ', unAmiIdentified);
 }
 
 const toto = defineProps(['id']);
@@ -40,12 +44,12 @@ const lesAmis = ref([
 ]);
 
 
-
+/* 
 const emit = defineEmits({
   // v-model event with validation
   'update:modelValue': (value) => value !== null,
 });
-
+ */
 
 </script>
 

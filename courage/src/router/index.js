@@ -136,9 +136,19 @@ const router = createRouter({
             component: () => import('../views/exo/Emit_parent.vue')
         },
         {
+            path: '/Emit2_parent',
+            name: 'Emit2_parent',
+            component: () => import('../views/exo/Emit2_parent.vue')
+        },
+        {
             path: '/Tp2',
             name: 'Tp2',
             component: () => import('../views/tp/Tp2.vue')
+        },
+        {
+            path: '/Tp5_parent',
+            name: 'Tp5_parent',
+            component: () => import('../views/tp/Tp5_parent.vue')
         },
         {
             path: '/Style',

@@ -12,7 +12,6 @@ Vesrion Objet:
           </ul>
       </ul>
   </div>
- 
 </template>
 
 <script setup lang='js'>
